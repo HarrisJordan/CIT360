@@ -1,0 +1,36 @@
+package training.beans;
+
+import java.io.Serializable;
+
+//marker that indicates to the rest of our environment that this class can be serialized.
+public class Admin implements Serializable {
+	
+	private static final long serialVersionUID = 5150786606430272901L;
+	//a way to uniquely identify your class once it's been serialized. 
+	
+	
+	//Create a private field for each column in an admin table database
+	private int adminId;
+	private String userName;
+	private String password;
+	
+	//The methods. Getters and Setters
+	public int getAdminId() {
+		return adminId;
+	}
+	public void setAdminId(int adminId) {
+		this.adminId = adminId;
+	}
+	public String getUserName() {
+		return userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+}
